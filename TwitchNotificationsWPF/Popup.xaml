@@ -1,0 +1,16 @@
+﻿<Window x:Name="Popup1" x:Class="TwitchNotificationsWPF.Popup"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TwitchNotificationsWPF"
+        mc:Ignorable="d"
+        Title="Popup" Height="72" Width="242" Topmost="True" ShowInTaskbar="False" AllowsTransparency="True" WindowStyle="None" Background="#FF272729" Foreground="White" BorderThickness="1" BorderBrush="#FF171717" TouchUp="Popup1_TouchUp" Closing="Popup1_Closing" MouseLeftButtonUp="Popup1_MouseLeftButtonUp">
+    <Grid>
+        <Label x:Name="label_channel_live" Content="sodapoppin" HorizontalAlignment="Left" Margin="64,10,0,0" VerticalAlignment="Top" Foreground="White" Height="34" FontFamily="Segoe UI Semibold" FontSize="16"/>
+        <Label x:Name="label_justwentlive" Content="Just went live!" HorizontalAlignment="Left" Margin="64,32,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="Segoe UI Light" FontSize="13.333"/>
+        <Border BorderThickness="1" Width="42" Height="42" Margin="15,15,0,0" BorderBrush="#FF4493C9" HorizontalAlignment="Left" VerticalAlignment="Top">
+            <Image x:Name="image_channel_logo" HorizontalAlignment="Left" Height="40" VerticalAlignment="Top" Width="40" Margin="0" Stretch="Fill"/>
+        </Border>
+    </Grid>
+</Window>
